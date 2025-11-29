@@ -1,0 +1,60 @@
+/* ===== БАЗА: контейнеры, типографика ===== */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* Шапка */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  background: rgba(255, 255, 255, .65);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.header__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.tabs {
+  display: flex;
+  gap: 12px;
+}
+.todo {
+  background:
+    radial-gradient(1200px 900px at 20% 25%, #ebe6f5 0%, transparent 60%),
+    radial-gradient(1200px 900px at 80% 35%, #f6eee4 0%, transparent 60%),
+    radial-gradient(1200px 900px at 50% 85%, #e6eef6 0%, transparent 60%),
+    linear-gradient(#f6f3f9, #fbfaf8);
+  background-attachment: fixed;
+}
+.form-add_input:focus-visible{
+  outline: none;
+  border-color: #7e66cd;
+  box-shadow: 0 0 0 3px rba(126, 102,205, 0.28);
+}
+.form-add_button:hover{
+  background: #735cc6;
+  box-shadow: 0 px 16px rgba(115, 92, 198, 0.28);
+}
+.form-add_button:focus-visible{
+  outline:none;
+  box-shadow: 0 0 0 3px rgba(126, 102, 205, 0.3);
+}
+.form-add_button:active{
+  transform: translateY(1px);
+}
+
